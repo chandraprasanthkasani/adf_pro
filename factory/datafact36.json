@@ -1,0 +1,15 @@
+{
+	"name": "datafact36",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bb8960be-814c-4708-8502-cd275f5f33c4",
+		"tenantId": "bbc43316-b38c-4c31-bf01-ff93a306a73c"
+	}
+}
