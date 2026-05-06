@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafact36"
+		},
+		"la_adls_accountKey": {
+			"value": ""
+		},
+		"ls_sql_database_password": {
+			"value": ""
+		},
+		"la_adls_properties_typeProperties_url": {
+			"value": "https://adlsacct1.dfs.core.windows.net/"
+		},
+		"ls_RestService1_properties_typeProperties_url": {
+			"value": " https://pokeapi.co/api/v2/pokemon"
+		},
+		"ls_sql_database_properties_typeProperties_server": {
+			"value": "sqlserverprocour.database.windows.net"
+		},
+		"ls_sql_database_properties_typeProperties_database": {
+			"value": "sqldatabasepro"
+		},
+		"ls_sql_database_properties_typeProperties_userName": {
+			"value": "root1234"
+		}
+	}
+}
