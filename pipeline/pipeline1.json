@@ -54,7 +54,7 @@
 						"parameters": {
 							"container": "source",
 							"folder": "csvfiles",
-							"file": "Fact_Sales_1.csv"
+							"file": "Fact_Sales_2.csv"
 						}
 					}
 				],
@@ -65,7 +65,7 @@
 						"parameters": {
 							"container": "destination",
 							"folder": "storagetrigger",
-							"file": "Fact_Sales_1.csv"
+							"file": "Fact_Sales_2.csv"
 						}
 					}
 				]
