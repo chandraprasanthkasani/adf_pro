@@ -1,5 +1,5 @@
 {
-	"name": "schedule",
+	"name": "schedule_trigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
@@ -9,14 +9,21 @@
 					"referenceName": "scheduling",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "only seleted files",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Day",
+				"frequency": "Minute",
 				"interval": 2,
-				"startTime": "2026-05-05T13:17:00",
+				"startTime": "2026-05-07T16:31:00",
+				"endTime": "2026-05-07T16:35:50",
 				"timeZone": "India Standard Time"
 			}
 		}

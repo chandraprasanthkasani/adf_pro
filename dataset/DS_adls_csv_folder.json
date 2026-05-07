@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "files",
-				"fileSystem": "data"
+				"folderPath": "datascience team",
+				"fileSystem": "destination"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
