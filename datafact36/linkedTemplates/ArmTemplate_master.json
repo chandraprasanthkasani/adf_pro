@@ -23,6 +23,10 @@
 			"type": "string",
 			"defaultValue": " https://pokeapi.co/api/v2/pokemon"
 		},
+		"ls_http_git_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com"
+		},
 		"ls_sql_database_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "sqlserverprocour.database.windows.net"
@@ -34,6 +38,10 @@
 		"ls_sql_database_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "root1234"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/9adbab87-e763-4b03-9d97-0a5b6d0986b8/resourceGroups/resource_grp/providers/Microsoft.Storage/storageAccounts/adlsacct1"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,6 +82,9 @@
 					"ls_RestService1_properties_typeProperties_url": {
 						"value": "[parameters('ls_RestService1_properties_typeProperties_url')]"
 					},
+					"ls_http_git_properties_typeProperties_url": {
+						"value": "[parameters('ls_http_git_properties_typeProperties_url')]"
+					},
 					"ls_sql_database_properties_typeProperties_server": {
 						"value": "[parameters('ls_sql_database_properties_typeProperties_server')]"
 					},
@@ -86,6 +97,29 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "datafact36_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'datafact36_ArmTemplate_0')]"
+			]
 		}
 	]
 }
