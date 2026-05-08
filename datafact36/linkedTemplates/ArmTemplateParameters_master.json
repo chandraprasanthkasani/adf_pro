@@ -29,9 +29,6 @@
 		"ls_sql_database_properties_typeProperties_userName": {
 			"value": "root1234"
 		},
-		"trigger1_properties_typeProperties_scope": {
-			"value": "/subscriptions/9adbab87-e763-4b03-9d97-0a5b6d0986b8/resourceGroups/resource_grp/providers/Microsoft.Storage/storageAccounts/adlsacct1"
-		},
 		"containerUri": {
 			"value": ""
 		},
